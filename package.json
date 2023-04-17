@@ -1,48 +1,43 @@
 {
-  "name": "ejs-boilerplate",
-  "version": "1.0.0",
-  "description": "Standard boiler plate template to run ejs files",
-  "main": "index.js",
+  "name": "worqhat-apis",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "node index.js",
-    "build:tailwind:minify": "npx tailwindcss -i ./style/tailwind.css -o ./style/styles.css --minify",
-    "build:tailwind": "npx tailwindcss -i ./style/tailwind.css -o ./style/styles.css --watch"
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "clear": "docusaurus clear",
+    "serve": "docusaurus serve",
+    "write-translations": "docusaurus write-translations",
+    "write-heading-ids": "docusaurus write-heading-ids"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/WorqHat/ejs-boilerplate.git"
-  },
-  "author": "WorqHat",
-  "license": "ISC",
   "dependencies": {
-    "@tailwindcss/aspect-ratio": "^0.4.2",
-    "@tailwindcss/forms": "^0.5.3",
-    "@tailwindcss/line-clamp": "^0.4.2",
-    "@tailwindcss/typography": "^0.5.7",
-    "autoprefixer": "^10.4.12",
-    "aws-sdk": "^2.1222.0",
-    "body-parser": "^1.19.0",
-    "cross-fetch": "^3.1.5",
-    "cssnano": "^5.1.13",
-    "dotenv": "^16.0.0",
-    "ejs": "^3.1.6",
-    "express": "^4.18.1",
-    "firebase-admin": "^10.0.2",
-    "generate-password": "^1.7.0",
-    "nodemon": "^2.0.14",
-    "socket.io": "^4.5.4",
-    "uuid": "^8.3.2"
+    "@docusaurus/core": "2.4.0",
+    "@docusaurus/preset-classic": "2.4.0",
+    "@mdx-js/react": "^1.6.22",
+    "clsx": "^1.2.1",
+    "prism-react-renderer": "^1.3.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
   },
   "devDependencies": {
-    "minifyify": "^7.3.5",
-    "postcss": "^8.4.17",
-    "prettier": "^2.7.1",
-    "tailwindcss": "^3.1.8",
-    "webpack": "^5.74.0",
-    "webpack-cli": "^4.10.0"
+    "@docusaurus/module-type-aliases": "2.4.0"
   },
-  "bugs": {
-    "url": "https://github.com/WorqHat/ejs-boilerplate/issues"
+  "browserslist": {
+    "production": [
+      ">0.5%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   },
-  "homepage": "https://github.com/WorqHat/ejs-boilerplate#readme"
+  "engines": {
+    "node": ">=16.14"
+  }
 }

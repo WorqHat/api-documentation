@@ -6,20 +6,20 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
-  title: 'My Site',
+  title: 'WorqHat API Documentation',
   tagline: 'Dinosaurs are cool',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here
-  url: 'https://your-docusaurus-test-site.com',
+  url: 'https://api.worqhat.com',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'WorqHat', // Usually your GitHub org/user name.
+  projectName: 'api-documentation', // Usually your repo name.
 
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -42,14 +42,14 @@ const config = {
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/worqhat/api-documentation/edit/main/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
           editUrl:
-            'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+            'https://github.com/worqhat/api-documentation/edit/main/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -88,28 +88,60 @@ const config = {
         style: 'dark',
         links: [
           {
-            title: 'Docs',
+            title: 'WorqHat',
             items: [
               {
-                label: 'Tutorial',
-                to: '/docs/intro',
+                label: 'Playground',
+                to: 'https://playground.worqhat.app/worqbot',
+              },
+              {
+                label: 'No-Code Builder',
+                to: 'https://www.worqhat.com/#no-code-builder',
+              },
+              {
+                label: 'WorqDocs',
+                to: 'https://www.worqhat.com/#worqdocs',
+              },
+              {
+                label: 'AI Workflows',
+                to: 'https://www.worqhat.com/#workflows',
+              },
+              {
+                label: 'Databases',
+                to: 'https://www.worqhat.com/#databases',
+              },
+              {
+                label: 'Integrations',
+                href: 'https://playground.worqhat.app/coming-soon',
               },
             ],
           },
           {
-            title: 'Community',
+            title: 'Company',
             items: [
               {
-                label: 'Stack Overflow',
-                href: 'https://stackoverflow.com/questions/tagged/docusaurus',
+                label: 'Careers',
+                href: 'https://careers.worqhat.com/',
               },
               {
-                label: 'Discord',
-                href: 'https://discordapp.com/invite/docusaurus',
+                label: 'Changelog',
+                href: 'https://updates.worqhat.com/',
               },
               {
-                label: 'Twitter',
-                href: 'https://twitter.com/docusaurus',
+                label: 'Security',
+                href: 'https://worqhat.com/security',
+              },
+              {
+                label: 'Status',
+                href: 'https://worqhat-status.statuspage.io/',
+              },
+              {
+                label: 'Terms of Service',
+                href: 'https://worqhat.com/terms-of-service',
+              },
+              {
+                label: 'Privacy Policy',
+                href: 'https://worqhat.com/privacy-policy',
               },
             ],
           },
@@ -121,13 +153,42 @@ const config = {
                 to: '/blog',
               },
               {
+                label: 'Support',
+                to: 'https://docs.worqhat.com/',
+              },
+              {
+                label: 'Discord',
+                href: 'https://discordapp.com/invite/docusaurus',
+              },
+              {
                 label: 'GitHub',
-                href: 'https://github.com/facebook/docusaurus',
+                href: 'https://github.com/worqhat/api-documentation',
               },
             ],
           },
+          {
+            title: 'Follow Us',
+            items: [
+                {
+                    label: 'Twitter',
+                    href: 'https://twitter.com/worqhat',
+                },
+                {
+                    label: 'LinkedIn',
+                    href: 'https://www.linkedin.com/company/worqhat',
+                },
+                {
+                    label: 'Facebook',
+                    href: 'https://www.facebook.com/worqhat',
+                },
+                {
+                    label: 'Instagram',
+                    href: 'https://www.instagram.com/worqhat',
+                },
+            ]
+          }
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+        copyright: `Copyright © ${new Date().getFullYear()} Winlysis Private Limited - All Rights Reserved.`,
       },
       prism: {
         theme: lightCodeTheme,

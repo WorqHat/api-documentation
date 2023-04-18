@@ -7,7 +7,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'WorqHat API Documentation',
-  tagline: 'Dinosaurs are cool',
+  tagline: 'Enable No-Code Automation with WorqHat',
   favicon: 'img/favicon.ico',
 
   // Set the production url of your site here

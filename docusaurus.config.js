@@ -57,7 +57,6 @@ const config = {
       }),
     ],
   ],
-
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -74,12 +73,16 @@ const config = {
             type: 'docSidebar',
             sidebarId: 'tutorialSidebar',
             position: 'left',
-            label: 'Tutorial',
+            label: 'API Docs',
           },
           {to: '/blog', label: 'Blog', position: 'left'},
           {
             href: 'https://github.com/worqhat/api-documentation',
             label: 'GitHub',
+            position: 'right',
+          },
+          {
+            type: 'docsVersionDropdown',
             position: 'right',
           },
         ],
